@@ -22,6 +22,7 @@ net localgroup administrators
 netsh wlan show drivers
 netsh wlan show networks mode=bssid
 gpresult /SCOPE COMPUTER /Z
+cmdkey /list
 gpresult /SCOPE USER /Z
 netsh wlan show interfaces
 netsh wlan show profiles
