@@ -1,42 +1,41 @@
 cmd.exe /c set
-cmdkey /list
-arp -a
-ipconfig /all
-ipconfig /displaydns
-route print
-net view
-netstat -nao
-netstat -vb
-netstat -ns
-net accounts
-net session
-net group
-net share
-net localgroup
-net user
-net view /domain
-netsh firewall show config
-net group administrators
-tasklist /svc
-net localgroup administrators
-netsh wlan show drivers
-netsh wlan show networks mode=bssid
-gpresult /SCOPE COMPUTER /Z
-cmdkey /list
-gpresult /SCOPE USER /Z
-netsh wlan show interfaces
-netsh wlan show profiles
-wmic group list
-wmic useraccount list
-wmic service list brief
-wmic volume list brief
-wmic logicaldisk get description,filesystem,name,size
-wmic netlogin get name,lastlogon,badpasswordcount
-wmic netclient list brief
-wmic netuse get name,username,connectiontype,localname
-wmic share get name,path
-wmic nteventlog get path,filename,writeable
-wmic startup list full
-wmic product get name,version
-wmic rdtoggle list
-wmic qfe
+arp -a > autit_op.txt
+ipconfig /all >> autit_op.txt
+ipconfig /displaydns >> autit_op.txt
+route print >> autit_op.txt
+net view >> autit_op.txt
+netstat -nao >> autit_op.txt
+netstat -vb >> autit_op.txt
+netstat -ns >> autit_op.txt
+net accounts >> autit_op.txt
+net session >> autit_op.txt
+net group >> autit_op.txt
+net share >> autit_op.txt
+net localgroup >> autit_op.txt
+net user >> autit_op.txt
+net view /domain >> autit_op.txt
+netsh firewall show config >> autit_op.txt
+net group administrators >> autit_op.txt
+tasklist /svc >> autit_op.txt
+net localgroup administrators >> autit_op.txt
+netsh wlan show drivers >> autit_op.txt
+netsh wlan show networks mode=bssid >> autit_op.txt
+gpresult /SCOPE COMPUTER /Z >> autit_op.txt
+cmdkey /list >> autit_op.txt
+gpresult /SCOPE USER /Z >> autit_op.txt
+netsh wlan show interfaces >> autit_op.txt
+netsh wlan show profiles >> autit_op.txt
+wmic group list >> autit_op.txt
+wmic useraccount list >> autit_op.txt
+wmic service get name,captions >> autit_op.txt
+wmic volume list brief >> autit_op.txt
+wmic logicaldisk get description,filesystem,name,size >> autit_op.txt
+wmic netlogin get name,lastlogon,badpasswordcount >> autit_op.txt
+wmic netclient list brief >> autit_op.txt
+wmic netuse get name,username,connectiontype,localname >> autit_op.txt
+wmic share get name,path >> autit_op.txt
+wmic nteventlog get path,filename,writeable >> autit_op.txt
+wmic startup list full >> autit_op.txt
+wmic product get name,version >> autit_op.txt
+wmic rdtoggle list >> autit_op.txt
+wmic qfe >> autit_op.txt
